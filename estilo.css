@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Do+Hyeon&family=Jomhuria&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor-azul: #2e92ea; /* Azul */
+    --cor-rosa: #f5a9a9; /* Rosa */
+    --cor-branca: #ffffff;
+}
+
+body{
+    background: linear-gradient(135deg, #bcecff, #ffc1c8);
+    min-height: 100vh;
+}
+
+#corpo{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+    background-image: url(img/download.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Nome e img*/
+#começo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgs{
+    display: flex;
+}
+
+#um{
+    margin-right: -90px;
+    margin-bottom: 50px;
+    transform: rotate(-20deg);
+}
+#sete{
+    margin-bottom: 50px;
+    margin-left: -90px;
+    transform: rotate(20deg);
+}
+#eu{
+    width: 250px;
+}
+
+#nome{
+    font-size: 120px;
+    margin-top: -80px;
+    color: var(--cor-azul);
+    text-shadow: 2px 2px 5px #145c9a;
+    font-weight: bold;
+    font-family: "Do Hyeon", sans-serif;
+}
+
+#text{
+    font-size: 35px;
+    color: var(--cor-branca);
+    line-height: 0.6;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    text-align: center;
+    padding: 0px 20px;
+    font-family: "Jomhuria", serif;
+    text-shadow: 2px 2px 4px #0a3a64;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.547);
+}
+
+/* Data e Hora*/
+#dia{
+    background-color: var(--cor-branca);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 35px;   
+    color: var(--cor-azul);
+    font-family: "Changa One", sans-serif;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.547);
+    text-shadow: 2px 2px 5px rgb(144, 143, 143);
+    box-shadow: 2px 2px 5px var(--cor-azul);
+}
+
+/* Localização */
+#localizacao{
+    background-color: var(--cor-azul);
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 280px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px var(--cor-branca);
+}
+
+#icone{
+    width: 20px;
+    filter: brightness(0) invert(1);
+}
+
+#button_icon{
+    display: flex;
+    margin-bottom: 5px;
+    background-color: transparent;
+    padding: 2px;
+    border-radius: 100%;
+    border: none;
+    align-items: center;
+    color: var(--cor-branca);
+}
+
+#nome_local{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--cor-branca);
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+/* Links */
+.link{
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+.link:hover{
+    text-decoration: underline;
+    color: var(--cor-rosa);
+}
+
+#endereco{
+    color: var(--cor-branca);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+#cardapio{
+    font-family: "Jomhuria", serif;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.547);
+}
+
+#outro_c{
+    font-family: "Jomhuria", serif;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.547);
+}
+
+/*Animação*/
+
+#paragrafo {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    display: block;
+}
+
+#paragrafo.show {
+    max-height: 1000px; /* Um valor grande suficiente para o parágrafo */
+    opacity: 1;
+}
+
+#final{
+    line-height: 0.7;
+    font-size: 35px;
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 0px 45px;
+    margin-bottom: 20px;
+    font-family: "Jomhuria", serif;
+    text-shadow: 2px 2px 4px #0a3a64;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.547);
+}

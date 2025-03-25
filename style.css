@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2/share?selection.family=Poiret+One);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+:root {
+    --cor-primaria: #4daed4;  /* Azul */
+    --cor-secundaria: #eca2b1; /* Rosa */
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #333;
+    --cor-destaque: #ffffff;
+}
+
+body {
+    background: linear-gradient(135deg, #dff6ff, #ffdde1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+ 
+
+#corpo {
+    width: 500px;
+    background-color: var(--cor-destaque);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Nome e Imagem */
+#começo {
+    margin-bottom: 20px;
+}
+
+#nome {
+    background-color: var(--cor-primaria);
+    font-size: 48px;
+    color: var(--cor-destaque);
+    padding: 10px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto do convite */
+#text {
+    font-size: 18px;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+}
+
+/* Data e Hora */
+#dia {
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#num {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#mes, #hora {
+    font-size: 22px;
+}
+
+/* Botão de Localização */
+#localizacao {
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: var(--cor-destaque);
+    font-size: 18px;
+}
+
+#button_icon {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--cor-destaque);
+}
+
+#button_icon:hover {
+    text-decoration: underline;
+}
+
+#paragrafo {
+    display: none;
+    margin-top: 10px;
+}
+
+#paragrafo.show {
+    display: block;
+}
+
+/* Links */
+.link {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
