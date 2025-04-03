@@ -42,18 +42,16 @@ body{
 }
 
 #um{
-    margin-right: -90px;
+    margin-right: -50px;
     margin-bottom: 50px;
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
 }
 #sete{
     margin-bottom: 50px;
-    margin-left: -90px;
-    transform: rotate(20deg);
+    margin-left: -50px;
+    transform: rotate(15deg);
 }
-#eu{
-    width: 250px;
-}
+
 
 #nome{
     font-size: 120px;
