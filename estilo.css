@@ -132,11 +132,9 @@ body{
 
 /* Links */
 .link{
-    text-decoration: none;
     color: var(--cor-branca);
 }
 .link:hover{
-    text-decoration: underline;
     color: var(--cor-rosa);
 }
 
